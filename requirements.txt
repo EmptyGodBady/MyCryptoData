@@ -5,3 +5,4 @@ google-auth
 yfinance
 matplotlib
 pandas
+python-dotenv
