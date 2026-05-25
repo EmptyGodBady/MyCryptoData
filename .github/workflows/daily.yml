@@ -17,7 +17,11 @@ jobs:
           python-version: "3.11"
 
       - run: pip install -r requirements.txt
-
+      - name: Create google.json safely
+        run: |
+          cat << 'EOF' > google.json
+          ${{ secrets.GOOGLE_JSON }}
+          EOF
       - run: python main.py
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
