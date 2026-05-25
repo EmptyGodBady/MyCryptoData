@@ -1,0 +1,7 @@
+openai
+requests
+gspread
+google-auth
+yfinance
+matplotlib
+pandas
